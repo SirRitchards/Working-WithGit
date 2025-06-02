@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3bvaW_kxz0aKRoca-F-Abw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="0ccb5fde-35e4-48e8-a1c6-403a5d5183ee" CvTextArea="102, 104, 59, 13" CvTextArgument="New mail" CvType="Text" DesignTimeRectangle="64, 91, 139, 40" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Mail - Richards Otieno - Outlook - Web content' cls='Chrome_WidgetWin_1' title='Mail - Richards Otieno - Outlook' /&gt;&lt;ctrl name='Mail - Richards Otieno - Outlook' role='document' /&gt;&lt;ctrl name='Ribbon' role='pane' /&gt;&lt;ctrl name='Home' role='property page' /&gt;&lt;ctrl name='Move &amp;amp; delete' role='grouping' /&gt;&lt;ctrl name='New mail' role='menu button' /&gt;" Guid="227af48b-a65e-4f2a-bf79-81725c8175a3" ScopeSelectorArgument="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='Mail - Richards Otieno - Outlook' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0ccb5fde-35e4-48e8-a1c6-403a5d5183ee" CvTextArea="23, 23, 62, 15" CvTextArgument="Outlook" CvType="Text" DesignTimeRectangle="7, 15, 304, 32" FullSelectorArgument="&lt;wnd cls='Chrome_WidgetWin_0' idx='4' /&gt;&lt;ctrl role='client' /&gt;" Guid="dd926c57-4e5f-491d-a74d-069f08ef41ac" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

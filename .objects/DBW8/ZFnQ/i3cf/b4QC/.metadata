@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Focused Other Select Fi…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "b4QCYbM6TkOvDkyVjPZPsw",
+  "Reference": "wzJCAZmrlka6aHPqlmPj9Q/b4QCYbM6TkOvDkyVjPZPsw",
+  "ParentRef": "wzJCAZmrlka6aHPqlmPj9Q/i3cfE1LdlkGn0gU0t4VZcg",
+  "Created": "2025-05-26T19:23:15.2931167Z",
+  "Updated": "2025-05-26T19:23:15.2931167Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
