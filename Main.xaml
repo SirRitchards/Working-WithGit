@@ -257,7 +257,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Download attachments from Outlook mail messages in Inbox" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="791,2822" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Download attachments from Outlook mail messages in Inbox" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="635,2822" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="Attachments" />
     </Sequence.Variables>
@@ -283,7 +283,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="492,452" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[InputLimit &lt; 1 AND InputLimit.IsNumeric() = false]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="492,452" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
               <ui:InterruptibleDoWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,322" sap2010:WorkflowViewState.IdRef="Sequence_42">
                   <sap:WorkflowViewStateService.ViewState>
@@ -298,9 +298,6 @@
                   </ui:InputDialog>
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
-              <ui:InterruptibleDoWhile.Condition>
-                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="InputLimit &lt; 1 AND InputLimit.IsNumeric() = false" />
-              </ui:InterruptibleDoWhile.Condition>
             </ui:InterruptibleDoWhile>
             <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,380" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:30">
               <ui:RetryScope.ActivityBody>
@@ -328,7 +325,7 @@
               </ui:RetryScope.Condition>
             </ui:RetryScope>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="492,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[mailMessages.Count.ToString+Chr(32)+ &quot;mails were received on&quot;+ChrW(32)+DateTime.Now.ToString]" />
-            <umab:ForEachEmailX MailFilter="{x:Null}" DisplayName="For Each Email" sap:VirtualizedContainerService.HintSize="492,1531" sap2010:WorkflowViewState.IdRef="ForEachEmailX_6" IncludeSubfolders="False" Mails="[mailMessages]" NumberOfEmailsLimit="50" RetrieveAttachments="False" UnreadOnly="False" WithAttachmentsOnly="True">
+            <umab:ForEachEmailX MailFilter="{x:Null}" DisplayName="For Each Email" sap:VirtualizedContainerService.HintSize="492,1531" sap2010:WorkflowViewState.IdRef="ForEachEmailX_6" IncludeSubfolders="False" Mails="[mailMessages]" NumberOfEmailsLimit="100" RetrieveAttachments="False" UnreadOnly="False" WithAttachmentsOnly="True">
               <umab:ForEachEmailX.Body>
                 <ActivityAction x:TypeArguments="snm:MailMessage, x:Int32">
                   <ActivityAction.Argument1>
